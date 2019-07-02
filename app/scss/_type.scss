@@ -45,6 +45,7 @@ h2.chart-subhead {
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 20px;
+    max-width: 500px;
 }
 
 h3.chart-title {
@@ -52,9 +53,11 @@ h3.chart-title {
     text-transform: uppercase;
     font-size: 14px;
     margin-bottom: 20px;
+    // bottom margin should be 30px if there is no legend
+    margin-bottom: 10px;
     @include sm-md-xl {
         // set this only if there is a chart title + legend
-        margin-top: -23px;
+        margin-bottom: -23px;
     }
 }
 

@@ -11,6 +11,10 @@
     font-family: $font-stack;
     font-size: 12px;
   }
+
+  .highcharts-series-group {
+    transform: translate(1px,0)
+  }
   
   .highcharts-root {
     display: block;
@@ -85,7 +89,7 @@
     // use this to change the axis label
     & span:first-child {
       &:after {
-        content: "%";
+        content: " hours";
     }
     }
   }
@@ -204,13 +208,13 @@
   /* Series options */
   /* Default colors */
   .highcharts-color-0 {
-    fill: $green-primary;
-    stroke: $green-primary;
+    fill: $green-secondary-3;
+    stroke: $green-secondary-3;
   }
   
   .highcharts-color-1 {
-    fill: $slate-secondary-3;
-    stroke: $slate-secondary-3;
+    fill: $purple-primary;
+    stroke: $purple-primary;
   }
   
   .highcharts-color-2 {
@@ -387,7 +391,7 @@
   
   /* Legend */
   .highcharts-legend-box {
-    fill: none;
+    fill: #fff;
     stroke-width: 0;
   }
   

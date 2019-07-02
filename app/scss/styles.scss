@@ -42,8 +42,11 @@ a {
 
 #chart-container {
   width: 100%;
-  height: 450px;
+  height: 400px;
   margin-top: -10px;
+  @include x-small {
+    margin-bottom: 40px;
+  }
 }
 
 #chart-area {
