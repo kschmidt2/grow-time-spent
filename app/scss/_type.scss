@@ -54,7 +54,6 @@ h3.chart-title {
     font-size: 14px;
     margin-bottom: 20px;
     // bottom margin should be 30px if there is no legend
-    margin-bottom: 10px;
     @include sm-md-xl {
         // set this only if there is a chart title + legend
         margin-bottom: -23px;
